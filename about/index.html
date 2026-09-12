@@ -1,0 +1,202 @@
+<!doctype html> <!-- HTML 文档类型声明 -->
+<html lang="en"> <!-- HTML 根元素，语言设置为英文 -->
+  <head> <!-- 页面头部，包含元数据和配置 -->
+    <script> <!-- JavaScript 脚本标签 -->
+      document.documentElement.classList.remove("dark"), <!-- 移除深色模式类名 -->
+      localStorage.setItem("darkMode", "false") <!-- 在本地存储中设置深色模式为false -->
+    </script> <!-- 脚本结束 -->
+    <meta charset="UTF-8"> <!-- 指定页面字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 设置视口宽度自适应，初始缩放为1 -->
+    <title>About - Alice Lee</title> <!-- 页面标题 -->
+    <style>
+      :root {
+        --primary-color: #FADADD;
+        --secondary-color: #D1E8E2;
+        --accent-color-1: #FFFACD;
+        --accent-color-2: #E6E6FA;
+        --accent-color-3: #FF69B4;
+        --text-primary: #333333;
+        --text-secondary: #666666;
+        --bg-primary: #FFFFFF;
+        --bg-secondary: #F9F9F9;
+      }
+      
+      * {
+        color: var(--text-primary);
+      }
+      
+      body {
+        background-color: var(--bg-primary);
+      }
+      
+      nav {
+        background-color: var(--primary-color);
+      }
+      
+      #mobile-menu {
+        background-color: var(--primary-color) !important;
+      }
+      
+      .text-text-primary {
+        color: var(--text-primary) !important;
+      }
+      
+      .text-text-secondary {
+        color: var(--text-secondary) !important;
+      }
+      
+      .bg-bg {
+        background-color: var(--primary-color) !important;
+      }
+      
+      .bg-bg-tertiary {
+        background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color-1) 50%, var(--accent-color-2) 100%) !important;
+      }
+      
+      .nav-link {
+        color: var(--text-primary) !important;
+      }
+      
+      .nav-link:hover {
+        color: var(--accent-color-3) !important;
+      }
+    </style>
+  </head> <!-- 页面头部结束 -->
+  <body> <!-- 页面主体内容 -->
+    <!-- 导航栏 -->
+    <nav> <!-- 导航栏容器 -->
+      <a <!-- 链接标签 -->
+        href="/ZhiqunLi/#experience" <!-- 链接指向主页的经历部分 -->
+        class="nav-link section-link text-text-primary" <!-- CSS类名：导航链接、分块链接、主文本颜色 -->
+        data-section="experience" <!-- 数据属性：分块标识为experience -->
+      > <!-- 链接开始 -->
+        Education & Experience <!-- 链接文本：教育和经历 -->
+      </a> <!-- 链接结束 -->
+      
+      <a <!-- 链接标签 -->
+        href="/ZhiqunLi/#research" <!-- 链接指向主页的研究部分 -->
+        class="nav-link section-link text-text-primary" <!-- CSS类名 -->
+        data-section="research" <!-- 数据属性：分块标识为research -->
+      > <!-- 链接开始 -->
+        Research <!-- 链接文本：研究 -->
+      </a> <!-- 链接结束 -->
+      
+      <a <!-- 链接标签 -->
+        href="/ZhiqunLi/seminar/" <!-- 链接指向研讨会页面 -->
+        class="nav-link text-text-primary" <!-- CSS类名 -->
+      > <!-- 链接开始 -->
+        Seminar <!-- 链接文本：研讨会 -->
+      </a> <!-- 链接结束 -->
+      
+      <a <!-- 链接标签 -->
+        href="/ZhiqunLi/resources/" <!-- 链接指向资源页面 -->
+        class="nav-link text-text-primary" <!-- CSS类名 -->
+      > <!-- 链接开始 -->
+        Resources <!-- 链接文本：资源 -->
+      </a> <!-- 链接结束 -->
+      
+      <a <!-- 链接标签 -->
+        href="/ZhiqunLi/blog/" <!-- 链接指向博客页面 -->
+        class="nav-link text-text-primary" <!-- CSS类名 -->
+      > <!-- 链接开始 -->
+        Blog <!-- 链接文本：博客 -->
+      </a> <!-- 链接结束 -->
+      
+      <a <!-- 链接标签 -->
+        href="/ZhiqunLi/#contact" <!-- 链接指向主页的联系部分 -->
+        class="nav-link section-link text-text-primary" <!-- CSS类名 -->
+        data-section="contact" <!-- 数据属性：分块标识为contact -->
+      > <!-- 链接开始 -->
+        Contact <!-- 链接文本：联系 -->
+      </a> <!-- 链接结束 -->
+      
+      <div <!-- 容器 div 元素 -->
+        class="flex items-center space-x-4" <!-- CSS类名：弹性布局、垂直居中、水平间距 -->
+        data-animation="social" <!-- 数据属性：动画标识为social -->
+      ></div> <!-- div 结束 -->
+    </nav> <!-- 导航栏结束 -->
+
+    <!-- 移动菜单 -->
+    <div <!-- 容器 div 元素 -->
+      id="mobile-menu" <!-- 元素ID：mobile-menu -->
+      class="hidden lg:hidden shadow-lg" <!-- CSS类名：隐藏、在lg屏幕以上隐藏、阴影 -->
+    > <!-- div 开始 -->
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3"> <!-- 内部容器，水平填充、上下填充、垂直间距、响应式填充 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/#about" <!-- 链接指向主页的关于部分 -->
+          class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名：导航链接、分块链接、块级元素、填充 -->
+        > <!-- 链接开始 -->
+          About <!-- 链接文本：关于 -->
+        </a> <!-- 链接结束 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/#experience" <!-- 链接指向主页的经历部分 -->
+          class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名 -->
+          data-section="experience" <!-- 数据属性：分块标识为experience -->
+        > <!-- 链接开始 -->
+          Education & Experience <!-- 链接文本：教育和经历 -->
+        </a> <!-- 链接结束 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/#research" <!-- 链接指向主页的研究部分 -->
+          class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名 -->
+          data-section="research" <!-- 数据属性：分块标识为research -->
+        > <!-- 链接开始 -->
+          Research <!-- 链接文本：研究 -->
+        </a> <!-- 链接结束 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/seminar/" <!-- 链接指向研讨会页面 -->
+          class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名 -->
+        > <!-- 链接开始 -->
+          Seminar <!-- 链接文本：研讨会 -->
+        </a> <!-- 链接结束 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/resources/" <!-- 链接指向资源页面 -->
+          class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名 -->
+        > <!-- 链接开始 -->
+          Resources <!-- 链接文本：资源 -->
+        </a> <!-- 链接结束 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/blog/" <!-- 链接指向博客页面 -->
+          class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名 -->
+        > <!-- 链接开始 -->
+          Blog <!-- 链接文本：博客 -->
+        </a> <!-- 链接结束 -->
+        
+        <a <!-- 链接标签 -->
+          href="/ZhiqunLi/#contact" <!-- 链接指向主页的联系部分 -->
+          class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary" <!-- CSS类名 -->
+          data-section="contact" <!-- 数据属性：分块标识为contact -->
+        > <!-- 链接开始 -->
+          Contact <!-- 链接文本：联系 -->
+        </a> <!-- 链接结束 -->
+        
+        <div class="flex items-center space-x-4"></div> <!-- 社交媒体容器，弹性布局、垂直居中、水平间距 -->
+      </div> <!-- 内部容器结束 -->
+    </div> <!-- 移动菜单结束 -->
+
+    <!-- 个人信息 -->
+    <p class="text-text-secondary mt-1"> <!-- 段落元素：次级文本颜色、上边距 -->
+      <i class="fas fa-map-marker-alt mr-2"></i> <!-- 图标：Font Awesome 地图标记图标、右边距 -->
+      Columbus, Ohio, USA <!-- 文本内容：地址 -->
+    </p> <!-- 段落结束 -->
+
+    <!-- 技能标签 -->
+    <span <!-- 行内元素 -->
+      class="bg-bg-tertiary text-text-primary inline-flex items-center justify-center text-center px-3 py-2 max-w-[11rem] min-h-[2.75rem] rounded-xl text-xs sm:text-sm font-semibold"
+    > <!-- span 开始 -->
+      <!-- 技能标签 1 -->
+    </span> <!-- span 结束 -->
+    
+    <span <!-- 行内元素 -->
+      class="bg-bg-tertiary text-text-primary inline-flex items-center justify-center text-center px-3 py-2 max-w-[11rem] min-h-[2.75rem] rounded-xl text-xs sm:text-sm font-semibold"
+    > <!-- span 开始 -->
+      <!-- 技能标签 2 -->
+    </span> <!-- span 结束 -->
+
+  </body> <!-- 页面主体结束 -->
+</html> <!-- HTML 文档结束 -->

@@ -1,0 +1,297 @@
+/* 导入Google字体 - Montserrat和Nunito Sans */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Nunito+Sans:wght@400;600&display=swap");
+
+/* 自定义颜色变量 - 粉色主题 */
+:root {
+  --color-primary: #FADADD; /* 主色调 - 浅粉色 */
+  --color-secondary-1: #D1E8E2; /* 辅助色1 - 浅绿色 */
+  --color-secondary-2: #FFFACD; /* 辅助色2 - 浅黄色 */
+  --color-secondary-3: #E6E6FA; /* 辅助色3 - 浅紫色 */
+  --color-secondary-4: #FF69B4; /* 辅助色4 - 热粉色 */
+}
+
+/* 为所有元素、伪元素初始化Tailwind CSS变量 */
+*,
+:after,
+:before {
+  --tw-border-spacing-x: 0; /* 边框间距X轴为0 */
+  --tw-border-spacing-y: 0; /* 边框间距Y轴为0 */
+  --tw-translate-x: 0; /* 水平平移为0 */
+  --tw-translate-y: 0; /* 垂直平移为0 */
+  --tw-rotate: 0; /* 旋转为0 */
+  --tw-skew-x: 0; /* 水平倾斜为0 */
+  --tw-skew-y: 0; /* 垂直倾斜为0 */
+  --tw-scale-x: 1; /* 水平缩放比例为1 */
+  --tw-scale-y: 1; /* 垂直缩放比例为1 */
+}
+
+/* Tailwind CSS v3.4.17 基础样式 | MIT许可证 */
+
+/* 所有元素、伪元素的盒模型和边框初始化 */
+*,
+:after,
+:before {
+  box-sizing: border-box; /* 使用边框盒模型 */
+  border: 0 solid var(--color-primary); /* 初始边框使用主色调 */
+}
+
+/* 伪元素内容初始化 */
+:after,
+:before {
+  --tw-content: ""; /* 伪元素内容为空 */
+}
+
+/* HTML根元素和HTML标签样式 */
+:host,
+html {
+  line-height: 1.5; /* 行高为1.5倍 */
+  -webkit-text-size-adjust: 100%; /* 禁用webkit浏览器自动调整文本大小 */
+  tab-size: 4; /* tab键宽度为4个空格 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 使用系统默认无衬线字体 */
+  -webkit-font-feature-settings: "kern"; /* webkit字体特性设置 */
+  font-feature-settings: "kern"; /* 字体特性设置 - 字距调整 */
+}
+
+/* 页面主体样式 */
+body {
+  margin: 0; /* 移除默认外边距 */
+  line-height: inherit; /* 继承行高 */
+}
+
+/* 水平分割线样式 */
+hr {
+  height: 0; /* 高度为0 */
+  color: inherit; /* 继承颜色 */
+  border-top-width: 1px; /* 顶部边框宽度为1像素 */
+}
+
+/* 缩写元素样式 */
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted; /* webkit浏览器 - 虚线下划线 */
+  text-decoration: underline dotted; /* 虚线下划线 */
+}
+
+/* 标题元素样式(h1-h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* 继承字体大小 */
+  font-weight: inherit; /* 继承字体粗细 */
+}
+
+/* 链接元素样式 */
+a {
+  color: inherit; /* 继承颜色 */
+  text-decoration: inherit; /* 继承文本装饰 */
+}
+
+/* 粗体和强调元素样式 */
+b,
+strong {
+  font-weight: bolder; /* 字体更粗 */
+}
+
+/* 代码相关元素样式 */
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace; /* 使用等宽字体 */
+  font-feature-settings: normal; /* 标准字体特性 */
+  font-variation-settings: normal; /* 标准字体变化 */
+  font-size: 1em; /* 字体大小为1em */
+}
+
+/* 小文本元素样式 */
+small {
+  font-size: 80%; /* 字体大小为80% */
+}
+
+/* 上标和下标元素样式 */
+sub,
+sup {
+  font-size: 75%; /* 字体大小为75% */
+  line-height: 0; /* 行高为0 */
+  position: relative; /* 相对定位 */
+  vertical-align: baseline; /* 垂直对齐到基线 */
+}
+
+/* 下标元素位置调整 */
+sub {
+  bottom: -0.25em; /* 向下偏移 */
+}
+
+/* 上标元素位置调整 */
+sup {
+  top: -0.5em; /* 向上偏移 */
+}
+
+/* 表格元素样式 */
+table {
+  text-indent: 0; /* 文本缩进为0 */
+  border-collapse: collapse; /* 边框合并 */
+  border-color: inherit; /* 继承边框颜色 */
+}
+
+/* 表单元素通用样式 */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 继承字体 */
+  font-feature-settings: inherit; /* 继承字体特性 */
+  font-variation-settings: inherit; /* 继承字体变化 */
+  font-size: 100%; /* 字体大小为100% */
+  font-weight: inherit; /* 继承字体粗细 */
+  line-height: inherit; /* 继承行高 */
+  color: inherit; /* 继承颜色 */
+  margin: 0; /* 移除外边距 */
+  padding: 0; /* 移除内边距 */
+}
+
+/* 按钮和选择框文本变换 */
+button,
+select {
+  text-transform: none; /* 不进行文本变换 */
+}
+
+/* 按钮和输入框按钮样式 */
+button,
+input:where([type="button"]),
+input:where([type="reset"]),
+input:where([type="submit"]) {
+  -webkit-appearance: button; /* webkit浏览器 - 按钮外观 */
+  background-color: transparent; /* 背景透明 */
+  background-image: none; /* 无背景图 */
+}
+
+/* Firefox焦点环样式 */
+:-moz-focusring {
+  outline: auto; /* 自动轮廓 */
+}
+
+/* Firefox无效输入样式 */
+:-moz-ui-invalid {
+  box-shadow: none; /* 移除阴影 */
+}
+
+/* 进度条元素样式 */
+progress {
+  vertical-align: baseline; /* 垂直对齐到基线 */
+}
+
+/* 数字输入框微调按钮隐藏 */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; /* 高度自动 */
+}
+
+/* 搜索输入框样式 */
+[type="search"] {
+  -webkit-appearance: textfield; /* webkit浏览器 - 文本框外观 */
+  outline-offset: -2px; /* 轮廓偏移 */
+}
+
+/* webkit搜索装饰隐藏 */
+::-webkit-search-decoration {
+  -webkit-appearance: none; /* 移除默认外观 */
+}
+
+/* webkit文件上传按钮样式 */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* webkit浏览器 - 按钮外观 */
+  font: inherit; /* 继承字体 */
+}
+
+/* 摘要元素样式 */
+summary {
+  display: list-item; /* 显示为列表项 */
+}
+
+/* 块级元素外边距初始化 */
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0; /* 移除外边距 */
+}
+
+/* 字段集元素样式 */
+fieldset {
+  margin: 0; /* 移除外边距 */
+  padding: 0; /* 移除内边距 */
+}
+
+/* 图例元素样式 */
+legend {
+  padding: 0; /* 移除内边距 */
+}
+
+/* 列表元素样式 */
+menu,
+ol,
+ul {
+  list-style: none; /* 移除列表样式 */
+  margin: 0; /* 移除外边距 */
+  padding: 0; /* 移除内边距 */
+}
+
+/* 对话框元素样式 */
+dialog {
+  padding: 0; /* 移除内边距 */
+}
+
+/* 文本区域元素样式 */
+textarea {
+  resize: vertical; /* 仅允许垂直调整大小 */
+}
+
+/* 输入框和文本区域占位符样式 */
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 透明度为100% */
+  color: var(--color-secondary-1); /* 占位符颜色使用辅助色1 */
+}
+
+/* 按钮和按钮角色元素样式 */
+button,
+[role="button"] {
+  cursor: pointer; /* 光标样式为手指 */
+}
+
+/* 禁用元素样式 */
+:disabled {
+  cursor: default; /* 光标样式为默认 */
+}
+
+/* 图片和SVG元素样式 */
+img,
+svg {
+  display: block; /* 块级显示 */
+  vertical-align: middle; /* 垂直居中对齐 */
+}
+
+/* 图片响应式样式 */
+img {
+  max-width: 100%; /* 最大宽度为100% */
+  height: auto; /* 高度自动 */
+}
+
+/* 隐藏元素样式 */
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none; /* 隐藏显示 */
+}

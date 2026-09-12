@@ -1,0 +1,449 @@
+<!doctype html>
+<!-- HTML5 文档类型声明 -->
+<html lang=en>
+  <!-- 网页语言设置为英文 -->
+  <head>
+    <!-- 页面头部 -->
+    <script>
+      <!-- 初始化：移除深色模式，设置亮色模式 -->
+      document.documentElement.classList.remove("dark"),
+      localStorage.setItem("darkMode","false")
+    </script>
+    <meta charset=UTF-8>
+    <!-- 字符编码设置为UTF-8 -->
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <!-- 响应式设计和视口设置 -->
+    <title>Education & Experience | Zhiqun Li</title>
+    <!-- 页面标题 -->
+    <meta name=description content="Zhiqun Li, Economics PhD student at The Ohio State University.">
+    <!-- 页面描述 -->
+    <meta name=author content="Zhiqun Li">
+    <!-- 作者信息 -->
+    <link rel=canonical href=https://zhiqunli.github.io/ZhiqunLi/experience/>
+    <!-- 规范化链接，用于SEO -->
+    <meta property=og:type content=website>
+    <!-- Open Graph: 页面类型 -->
+    <meta property=og:title content="Education & Experience | Zhiqun Li">
+    <!-- Open Graph: 页面标题 -->
+    <meta property=og:description content="Zhiqun Li, Economics PhD student at The Ohio State University.">
+    <!-- Open Graph: 页面描述 -->
+    <meta property=og:url content=https://zhiqunli.github.io/ZhiqunLi/experience/>
+    <!-- Open Graph: 页面URL -->
+    <meta property=og:image content=https://zhiqunli.github.io/ZhiqunLi/images/profile.jpg>
+    <!-- Open Graph: 分享图片 -->
+    <meta property=og:image:width content=1200>
+    <!-- Open Graph: 图片宽度 -->
+    <meta property=og:image:height content=630>
+    <!-- Open Graph: 图片高度 -->
+    <meta property=og:site_name content="Zhiqun Li">
+    <!-- Open Graph: 网站名称 -->
+    <meta name=twitter:card content=summary_large_image>
+    <!-- Twitter: 卡片类型 -->
+    <meta name=twitter:title content="Education & Experience | Zhiqun Li">
+    <!-- Twitter: 标题 -->
+    <meta name=twitter:description content="Zhiqun Li, Economics PhD student at The Ohio State University.">
+    <!-- Twitter: 描述 -->
+    <meta name=twitter:image content=https://zhiqunli.github.io/ZhiqunLi/images/profile.jpg>
+    <!-- Twitter: 分享图片 -->
+    <link rel=icon href=/ZhiqunLi/images/profile.jpg>
+    <!-- 网站icon -->
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+    <!-- Font Awesome图标库 -->
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css>
+    <!-- Devicon开发者图标库 -->
+    <style>
+      /* CSS变量定义：颜色系统 */
+      :root{
+        --color-primary:#1E3A8A;
+        /* 主色：蓝色 */
+        --color-second:#2563EB;
+        /* 次色：浅蓝 */
+        --color-third:#0F766E;
+        /* 第三色：青绿色 */
+        --color-primary-light:color-mix(in srgb, var(--color-primary) 80%, white);
+        /* 主色浅色版本 */
+        --color-primary-dark:color-mix(in srgb, var(--color-primary) 80%, black);
+        /* 主色深色版本 */
+        --color-primary-lighter:color-mix(in srgb, var(--color-primary) 20%, white);
+        /* 主色最浅版本 */
+        --color-second-light:color-mix(in srgb, var(--color-second) 80%, white);
+        /* 次色浅色版本 */
+        --color-second-dark:color-mix(in srgb, var(--color-second) 80%, black);
+        /* 次色深色版本 */
+        --color-second-lighter:color-mix(in srgb, var(--color-second) 20%, white);
+        /* 次色最浅版本 */
+        --color-third-light:color-mix(in srgb, var(--color-third) 80%, white);
+        /* 第三色浅色版本 */
+        --color-third-dark:color-mix(in srgb, var(--color-third) 80%, black);
+        /* 第三色深色版本 */
+        --color-third-lighter:color-mix(in srgb, var(--color-third) 20%, white);
+        /* 第三色最浅版本 */
+        --color-gray-50:color-mix(in srgb, var(--color-primary) 5%, white);
+        /* 灰色-最浅 */
+        --color-gray-100:color-mix(in srgb, var(--color-primary) 10%, white);
+        /* 灰色-极浅 */
+        --color-gray-300:color-mix(in srgb, var(--color-primary) 20%, white);
+        /* 灰色-浅 */
+        --color-gray-400:color-mix(in srgb, var(--color-primary) 30%, white);
+        /* 灰色-中浅 */
+        --color-gray-500:color-mix(in srgb, var(--color-primary) 40%, white);
+        /* 灰色-中 */
+        --color-gray-600:color-mix(in srgb, var(--color-primary) 50%, black);
+        /* 灰色-中深 */
+        --color-gray-700:color-mix(in srgb, var(--color-primary) 60%, black);
+        /* 灰色-深 */
+        --color-gray-800:color-mix(in srgb, var(--color-primary) 80%, black);
+        /* 灰色-极深 */
+        --color-gray-900:color-mix(in srgb, var(--color-primary) 90%, black);
+        /* 灰色-最深 */
+        --color-white:#ffffff;
+        /* 白色 */
+        --color-black:#000000;
+        /* 黑色 */
+        --color-shadow-light:rgba(0, 0, 0, 0.1);
+        /* 浅色阴影 */
+        --color-shadow-lighter:rgba(0, 0, 0, 0.05);
+        /* 极浅色阴影 */
+        --color-shadow-dark:rgba(0, 0, 0, 0.3);
+        /* 深色阴影 */
+        --color-text-muted:var(--color-gray-500);
+        /* 静音文字色 */
+        --color-border-secondary:var(--color-gray-300);
+        /* 次级边框色 */
+        --color-success:var(--color-second);
+        /* 成功色 */
+        --color-bg:var(--color-white);
+        /* 背景色 */
+        --color-bg-secondary:var(--color-gray-100);
+        /* 次级背景色 */
+        --color-text-primary:var(--color-gray-900);
+        /* 主文字色 */
+        --color-text-secondary:var(--color-gray-700);
+        /* 次文字色 */
+        --color-border:var(--color-gray-300);
+        /* 边框色 */
+      }
+      /* 深色模式CSS变量覆盖 */
+      .dark{
+        --color-bg:color-mix(in srgb, var(--color-primary) 50%, black);
+        /* 深色背景 */
+        --color-bg-secondary:color-mix(in srgb, var(--color-primary) 30%, black);
+        /* 次级深色背景 */
+        --color-bg-tertiary:color-mix(in srgb, var(--color-primary) 40%, black);
+        /* 第三级深色背景 */
+        --color-text-primary:var(--color-gray-50);
+        /* 深色模式文字色 */
+        --color-text-secondary:var(--color-gray-300);
+        /* 次级文字色 */
+        --color-border:var(--color-gray-700);
+        /* 深色边框色 */
+        --color-text-muted:var(--color-gray-400);
+        /* 静音文字色 */
+        --color-border-secondary:var(--color-gray-600);
+        /* 次级边框色 */
+      }
+    </style>
+    <link rel=stylesheet type=text/css href=https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css>
+    <!-- Devicon图标库（重复引入） -->
+    <link rel=stylesheet href="/ZhiqunLi/css/main.css?v=1789186584" data-version=1789186584>
+    <!-- 主样式表 -->
+    <style>
+      /* 初始页面隐藏直到脚本加载完成 -->
+      body{visibility:hidden}
+      .dark body{visibility:hidden}
+    </style>
+  </head>
+  <body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+    <!-- 页面主体：响应式布局 -->
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50" role=banner>
+      <!-- 固定导航栏 -->
+      <div class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <!-- 导航容器 -->
+        <div class="flex justify-between h-16">
+          <!-- 导航内容区 -->
+          <div class="flex items-center">
+            <!-- 左侧品牌区 -->
+            <a href=/ZhiqunLi/ class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">
+              Zhiqun Li
+            </a>
+            <!-- 网站标题/品牌 -->
+          </div>
+          <div class="hidden lg:flex items-center space-x-6">
+            <!-- 桌面导航菜单（隐藏在小屏幕） -->
+            <a href=/ZhiqunLi/#about class="nav-link section-link text-text-primary dark:text-text-primary" data-section=#about>
+              About
+            </a>
+            <!-- 关于链接 -->
+            <a href=/ZhiqunLi/#experience class="nav-link section-link text-text-primary dark:text-text-primary" data-section=#experience>
+              Education & Experience
+            </a>
+            <!-- 教育经历链接 -->
+            <a href=/ZhiqunLi/#research class="nav-link section-link text-text-primary dark:text-text-primary" data-section=#research>
+              Research
+            </a>
+            <!-- 研究链接 -->
+            <a href=/ZhiqunLi/seminar/ class="nav-link text-text-primary dark:text-text-primary">
+              Seminar
+            </a>
+            <!-- 研讨会链接 -->
+            <a href=/ZhiqunLi/resources/ class="nav-link text-text-primary dark:text-text-primary">
+              Resources
+            </a>
+            <!-- 资源链接 -->
+            <a href=/ZhiqunLi/blog/ class="nav-link text-text-primary dark:text-text-primary">
+              Blog
+            </a>
+            <!-- 博客链接 -->
+            <a href=/ZhiqunLi/#contact class="nav-link section-link text-text-primary dark:text-text-primary" data-section=#contact>
+              Contact
+            </a>
+            <!-- 联系链接 -->
+            <div class="flex items-center space-x-4" data-animation=social>
+            </div>
+            <!-- 社交媒体容器（由脚本填充） -->
+          </div>
+          <div class="lg:hidden flex items-center space-x-4">
+            <!-- 移动端菜单按钮 -->
+            <button id=menu-btn class="text-text-primary dark:text-text-primary">
+              <!-- 菜单切换按钮 -->
+              <i class="fas fa-bars text-2xl"></i>
+              <!-- 汉堡菜单图标 -->
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id=mobile-menu class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+        <!-- 移动端菜单（隐藏在桌面） -->
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <!-- 移动菜单容器 -->
+          <a href=/ZhiqunLi/#about class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary" data-section=#about>
+            About
+          </a>
+          <!-- 移动菜单项：关于 -->
+          <a href=/ZhiqunLi/#experience class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary" data-section=#experience>
+            Education & Experience
+          </a>
+          <!-- 移动菜单项：教育经历 -->
+          <a href=/ZhiqunLi/#research class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary" data-section=#research>
+            Research
+          </a>
+          <!-- 移动菜单项：研究 -->
+          <a href=/ZhiqunLi/seminar/ class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Seminar
+          </a>
+          <!-- 移动菜单项：研讨会 -->
+          <a href=/ZhiqunLi/resources/ class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Resources
+          </a>
+          <!-- 移动菜单项：资源 -->
+          <a href=/ZhiqunLi/blog/ class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Blog
+          </a>
+          <!-- 移动菜单项：博客 -->
+          <a href=/ZhiqunLi/#contact class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary" data-section=#contact>
+            Contact
+          </a>
+          <!-- 移动菜单项：联系 -->
+          <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation=social>
+          </div>
+          <!-- 移动菜单社交媒体容器 -->
+        </div>
+      </div>
+    </nav>
+    <!-- 导航栏结束 -->
+    <style>
+      /* 移动菜单展开样式 */
+      .group.open .submenu{opacity:1!important;visibility:visible!important}
+    </style>
+    <script>
+      <!-- 导航栏JavaScript脚本 -->
+      document.addEventListener("DOMContentLoaded",function(){
+        console.log("Navigation script loaded");
+        const n=document.querySelectorAll(".section-link");
+        console.log("Found section links:",n.length);
+        const e="/ZhiqunLi/";
+        n.forEach(t=>{
+          t.addEventListener("click",function(t){
+            t.preventDefault(),
+            console.log("Section link clicked:",this.getAttribute("data-section"));
+            const n=this.getAttribute("data-section"),
+            s=window.location.pathname==="/" || window.location.pathname==="/" + "index.html" || window.location.pathname==="/".replace(/\/$/, "");
+            if(console.log("Is home page:",s),s){
+              const e=document.querySelector(n);
+              console.log("Target element found:",!!e),
+              e&&e.scrollIntoView({behavior:"instant",block:"start"})
+            }else console.log("Navigating to:",e+n),window.location.href=e+n
+          })
+        });
+        function t(){
+          if(console.log("Checking for hash:",window.location.hash),window.location.hash){
+            const e=document.querySelector(window.location.hash);
+            console.log("Hash target element found:",!!e),
+            e&&setTimeout(()=>{
+              console.log("Scrolling to hash target"),
+              e.scrollIntoView({behavior:"instant",block:"start"})
+            },100)
+          }
+        }
+        t(),
+        setTimeout(t,500),
+        setTimeout(t,1e3),
+        window.addEventListener("hashchange",function(){
+          console.log("Hash changed to:",window.location.hash),t()
+        }),
+        window.addEventListener("load",function(){
+          console.log("Window loaded, checking hash"),
+          setTimeout(t,200)
+        }),
+        document.querySelectorAll(".group > a.nav-link, .group > button.nav-link").forEach(e=>{
+          e.addEventListener("click",function(t){
+            t.preventDefault();
+            const n=this.closest(".group"),
+            s=n.classList.contains("open");
+            document.querySelectorAll(".group").forEach(e=>e.classList.remove("open")),
+            s||n.classList.add("open")
+          }),
+          document.addEventListener("click",function(t){
+            const n=e.closest(".group");
+            n.contains(t.target)||n.classList.remove("open")
+          })
+        }),
+        document.querySelectorAll("#mobile-menu a").forEach(e=>{
+          e.addEventListener("click",function(){
+            document.getElementById("mobile-menu").classList.add("hidden")
+          })
+        })
+      })
+    </script>
+    <!-- 导航栏脚本结束 -->
+    <div class="w-full h-16"></div>
+    <!-- 导航栏间距 -->
+    <main class=flex-grow>
+      <!-- 主内容区 -->
+      <section class="pt-8 pb-12 bg-bg dark:bg-bg">
+        <!-- 教育经历部分 -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- 内容容器 -->
+          <div class="flex flex-col lg:flex-row gap-8">
+            <!-- 响应式布局 -->
+            <div class=w-full>
+              <!-- 内容主体 -->
+              <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">
+                Education & Experience
+              </h1>
+              <!-- 页面标题 -->
+              <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
+              </div>
+              <!-- Markdown内容区域（空白，由其他脚本填充） -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 主内容区结束 -->
+    <footer class="bg-bg-secondary dark:bg-bg-secondary text-text-primary py-12 border-t border-border-primary">
+      <!-- 页脚 -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 页脚容器 -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <!-- 页脚布局 -->
+          <div class="mb-4 md:mb-0">
+            <!-- 左侧信息 -->
+            <a href=/ZhiqunLi/#home class="text-xl font-bold text-text-primary font-heading">
+              Zhiqun Li
+            </a>
+            <!-- 姓名 -->
+            <p class="text-text-secondary dark:text-text-muted mt-1">
+              Economics PhD Student. Labor Economics Researcher.
+            </p>
+            <!-- 职位描述 -->
+            <p class="text-text-secondary dark:text-text-muted mt-2">
+              I study labor economics, energy poverty, and applied microeconometrics.
+            </p>
+            <!-- 研究方向 -->
+            <p class="text-text-secondary dark:text-text-muted mt-1">
+              <i class="fas fa-map-marker-alt mr-2"></i>Columbus, Ohio, USA
+            </p>
+            <!-- 地址 -->
+            <a href=mailto:li.16344@buckeyeemail.osu.edu class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+              <!-- 邮箱链接 -->
+              <i class="fas fa-envelope mr-2"></i>li.16344@buckeyeemail.osu.edu
+            </a>
+            <!-- 邮箱 -->
+            <div class="flex space-x-8 mt-6 items-center" data-animation=social>
+              <!-- 社交媒体链接 -->
+              <a href=mailto:li.16344@buckeyeemail.osu.edu target=_blank rel="noopener noreferrer" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+                <!-- 邮箱社交链接 -->
+                <i class="fas fa-envelope text-3xl text-text-primary dark:text-text-primary"></i>
+              </a>
+            </div>
+            <!-- 社交媒体容器结束 -->
+          </div>
+          <!-- 左侧信息结束 -->
+          <div class="flex flex-col items-end">
+            <!-- 右侧标签区 -->
+            <div class="flex flex-wrap gap-2 justify-end">
+              <!-- 标签容器 -->
+              <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary inline-flex items-center justify-center text-center px-3 py-2 max-w-[11rem] min-h-[2.75rem] rounded-xl text-xs sm:text-sm font-semibold leading-snug whitespace-normal shadow-md">
+                Labor Economics
+              </span>
+              <!-- 标签：劳动经济学 -->
+              <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary inline-flex items-center justify-center text-center px-3 py-2 max-w-[11rem] min-h-[2.75rem] rounded-xl text-xs sm:text-sm font-semibold leading-snug whitespace-normal shadow-md">
+                Energy Poverty
+              </span>
+              <!-- 标签：能源贫困 -->
+              <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary inline-flex items-center justify-center text-center px-3 py-2 max-w-[11rem] min-h-[2.75rem] rounded-xl text-xs sm:text-sm font-semibold leading-snug whitespace-normal shadow-md">
+                Applied Microeconometrics
+              </span>
+              <!-- 标签：应用微观计量经济学 -->
+            </div>
+            <!-- 标签容器结束 -->
+          </div>
+          <!-- 右侧标签区结束 -->
+        </div>
+        <!-- 页脚布局结束 -->
+        <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+          <!-- 版权信息 -->
+          <p>© 2026 | Zhiqun Li</p>
+          <!-- 版权年份和作者 -->
+        </div>
+        <!-- 版权信息结束 -->
+      </div>
+      <!-- 页脚容器结束 -->
+    </footer>
+    <!-- 页脚结束 -->
+    <script>
+      <!-- Hugo颜色调色板配置 -->
+      window.HUGO_COLOR_PALETTES=[
+        {
+          name:"academic-blue",
+          main_color:"#1E3A8A",
+          second_color:"#2563EB",
+          third_color:"#0F766E"
+        }
+      ],
+      window.HUGO_COLOR_PALETTES&&window.HUGO_COLOR_PALETTES.length>0&&
+      console.log("👍 Using color palettes from Hugo config:",window.HUGO_COLOR_PALETTES.length,"palettes")
+    </script>
+    <!-- Hugo配置脚本结束 -->
+    <script src=/ZhiqunLi/js/scripts.min.b6e79814155cf02c33cf809dde2d11276e3a6e63f9671f039a78ce333e82ecbe.js></script>
+    <!-- 压缩脚本库1 -->
+    <script src=/ZhiqunLi/js/devicon-fallback.min.756ef6fcde1b4ae068ecda909aca217e25f63f6527bdf452d69a9b6271a15587.js></script>
+    <!-- 压缩脚本库2（Devicon备用） -->
+    <script src=/ZhiqunLi/js/dynamic-colors.min.6a387c448192ede54f610667cc57e48efd8a1b5a4ff417cee74f1860886f5e25.js></script>
+    <!-- 压缩脚本库3（动态颜色） -->
+    <script src=/ZhiqunLi/js/gsap-animations.min.64ec7fc4a172f1e56bb7353cb671198c8be07ce29c138c210b55a3255383ed99.js></script>
+    <!-- 压缩脚本库4（GSAP动画） -->
+    <script src=https://cdn.jsdelivr.net/npm/fslightbox/index.js></script>
+    <!-- 第三方库：Fslightbox（灯箱效果） -->
+    <script>
+      <!-- 最终初始化脚本 -->
+      document.documentElement.classList.remove("dark"),
+      localStorage.setItem("darkMode","false"),
+      window.addEventListener("load",function(){
+        document.body.style.visibility="visible"
+      })
+    </script>
+    <!-- 初始化脚本结束，页面显示 -->
+  </body>
+</html>
