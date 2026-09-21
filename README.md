@@ -2,7 +2,7 @@
 
 Economics PhD student at The Ohio State University, studying labor economics, household energy poverty, policy evaluation, and applied microeconometrics.
 
-- Personal website: https://zhiqunli.github.io/ZhiqunLi/
+- Personal website: [https://zhiqunli.github.io/ZhiqunLi/](https://zhiqunli.github.io/AliceLee/)
 - Google Scholar: https://scholar.google.com/citations?user=6YfOOVkAAAAJ&hl=en
 - Email: li.16344@buckeyemail.osu.edu
 
